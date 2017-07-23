@@ -111,3 +111,30 @@ button{
 	transform: rotate(45deg);
 	margin: 20px;
 }
+
+.gray-section{
+	background: #252F34;
+	margin: 0 auto;
+}
+
+.gray-section .img-section{
+	width: 45%;
+}
+
+.img-section img{
+	width:100%;
+}
+
+.gray-section .text-section{
+	width: 55%;
+}
+
+.article-preview > div{
+	float: left;
+}
+
+.article-preview:after{
+	content: '';
+	display: block;
+	clear:both;
+}
