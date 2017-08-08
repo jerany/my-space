@@ -4,14 +4,24 @@
 	clear:both;
 }
 
+p{
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+header{
+	background: rgba(0, 0, 0, 0.4);
+}
+
 nav{
-	background: #ccc;
+	background: transparent;
 	height: 50px;
 }
 
 #banner{
-	background: #777;
-	height: 700px;
+	background: transparent;
+	height: 880px;
 }
 
 nav ul{
@@ -39,11 +49,20 @@ nav ul li a{
 	text-align: center;
 	margin: 0 auto;
 	position:relative;
-	top: 160px;
+	top: 300px;
+}
+
+.inner .line{
+	margin: 0 auto;
+	background: #fff;
+	height: 1px;
+	width: 220px;
 }
 
 #banner .inner h1{
 	margin: 0;
+	padding: 10px;
+	color: #fff;
 }
 
 button{
@@ -62,6 +81,7 @@ button{
 
 #banner .inner .more{
 	margin-top: 240px;
+	color: #fff;
 }
 
 .sub-heading{
@@ -204,5 +224,60 @@ button{
 	min-height: 300px; 
 	padding: 50px;
 	box-sizing: border-box;
-	border: 1px solid white;
+	/* border: 1px solid white; */
+}
+
+.card:first-child{
+	background: rgba(0, 0, 0, 0.04)
+}
+
+.card:nth-child(2){
+	background: rgba(0, 0, 0, 0.08)
+}
+
+.card:nth-child(3){
+	background: rgba(0, 0, 0, 0.12)
+}
+
+.card:nth-child(4){
+	background: rgba(0, 0, 0, 0.16)
+}
+
+.card:nth-child(5){
+	background: rgba(0, 0, 0, 0.20)
+}
+
+.card:nth-child(6){
+	background: rgba(0, 0, 0, 0.24)
+}
+
+footer{
+	background:#333;
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+}
+
+footer .share-group{
+	display: block;
+	width: 1080px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.share-group li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.copy{
+	padding-bottom: 20px;
+}
+
+.main-wrapper{
+	background: #444 url("../img/banner.jpg");
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
