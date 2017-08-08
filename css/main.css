@@ -1,3 +1,9 @@
+.clearfix:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+
 nav{
 	background: #ccc;
 	height: 50px;
@@ -60,7 +66,7 @@ button{
 
 .sub-heading{
 	line-height: 30px;
-	margin: 30px;
+	margin: 30px 0;
 	font-size: 18px;
 }
 
@@ -131,10 +137,72 @@ button{
 
 .article-preview > div{
 	float: left;
+	font-size: 0; /*去掉两个div元素间的间距  */
 }
 
+.article-preview:nth-child(odd){
+	background-color: rgba(255, 255, 255,0.05)
+}
 .article-preview:after{
 	content: '';
 	display: block;
 	clear:both;
+}
+
+.text-section{
+	position: relative;
+	top: 68px;
+	left: 50px;
+	color: #fff;
+}
+
+.text-section h2{
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+.text-section .sub-heading{
+	font-size: 22px;
+	margin-top: 0;
+}
+
+.text-section p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+ .text-section > *{
+	max-width: 90%;
+} 
+
+.purple-section{
+	padding: 80px;
+	background: #3f3965;
+	color: #fff;
+}
+
+.purple-section .heading-wrapper{
+	text-align: center;
+}
+
+.purple-section h2{
+	margin: 0;
+}
+
+.purple-section h3{
+	font-size:24px;
+}
+
+.purple-section .hr{
+	background: #373259;
+	width: 60%;
+}
+
+.card{
+	float: left;
+	width: 50%;
+	min-height: 300px; 
+	padding: 50px;
+	box-sizing: border-box;
+	border: 1px solid white;
 }
